@@ -10,7 +10,7 @@ import { User } from '../user';
 })
 export class UserComponent implements OnInit {
 
-  user!:User;
+  
   userRepo : any;
 
   constructor(private userService: UserService, private repoService : RepoService,private http:HttpClient) {
