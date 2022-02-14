@@ -83,6 +83,10 @@
                                                 <p>Repositories</p>
                                                 {{ user.public_repos }}
                                             </div>
+                                            <div class="col-sm">
+                                                <p>DateCreated</p>
+                                                {{ user.completeDate}}
+                                            </div>
 
                                         </div>
                                     </div>
@@ -109,7 +113,7 @@
                                         {{repo.language}}
                                     </p>
 
-                                    
+                                    <div class="card-footer text-center">
                                         <a href="{{ repo.html_url }}" class="btn btn-primary" target="_blank">View on
                                             GitHub</a>
                                     </div>
