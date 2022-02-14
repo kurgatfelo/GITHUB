@@ -1,0 +1,16 @@
+<div class="card-body-fluid bodyform">
+    <div class="card-body form1">
+     <form #name="ngForm" class="form2">
+    <div class="form-group  formsearch">
+             <input type="text" class="form-control form3" placeholder="Enter username" [(ngModel)]="searchTerm"
+                 name="searchTerm">
+                
+         </div><br>
+         <div class="form-group">
+             
+             <input type="submit" class="btn btn-success" id="input" value="Search" (click)="searchUser()">
+         </div>
+     </form>
+ </div>
+ 
+</div>
