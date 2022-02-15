@@ -3,7 +3,6 @@ import { UserService } from '../user-service/user.service';
 import { RepoService } from '../repo-service/repo.service';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
-
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -15,7 +14,7 @@ export class UserComponent implements OnInit {
   userRepo : any;
 
   constructor(private userService: UserService, private repoService : RepoService,private http:HttpClient) {
-    this.user = new User('', '', '', '', 0, 0, 0, 0, '');
+    this.user = new User('', '', '', '', 0, 0, 0, 0,);
   }
   // fetching user 
   performSearch(searchTerm:any) {
