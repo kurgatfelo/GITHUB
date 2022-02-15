@@ -60,34 +60,32 @@
                             <div class="col-sm">
                                 <div class="testimonial-card">
                                     <div class="card-body card1">
-                                       <marquee behavior="scroll" direction="up"> <h1 class="card-title" style="text-align: center">
-                                            {{ user.login }}
-                                        </h1>
-                                    </marquee>
-                                        <hr />
-                                        <div style="text-align: center">
-                                            <p>Bio</p>
-                                            <p>{{ user.bio }}</p>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <p>followers</p>
-                                                {{ user.followers }}
+                                        <div *ngIf ="user">
+                                            <marquee behavior="scroll" direction="up">
+                                                <h1 class="card-title" style="text-align: center">
+                                                    {{ user.login }}
+                                                </h1>
+                                            </marquee>
+                                            <hr />
+                                            <div style="text-align: center">
+                                                <p>Bio</p>
+                                                <p>{{ user.bio }}</p>
                                             </div>
-                                            <div class="col-sm">
-                                                <p>following</p>
-                                                {{ user.following }}
+                                            <hr />
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <p>followers</p>
+                                                    {{ user.followers }}
+                                                </div>
+                                                <div class="col-sm">
+                                                    <p>following</p>
+                                                    {{ user.following }}
+                                                </div>
+                                                <div class="col-sm">
+                                                    <p>Repositories</p>
+                                                    {{ user.public_repos }}
+                                                </div>
                                             </div>
-                                            <div class="col-sm">
-                                                <p>Repositories</p>
-                                                {{ user.public_repos }}
-                                            </div>
-                                            <div class="col-sm">
-                                                <p>DateCreated</p>
-                                                {{ user.completeDate}}
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
