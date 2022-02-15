@@ -9,7 +9,7 @@ import { UserService } from './user-service/user.service';
 import { RepoService } from './repo-service/repo.service';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { FormsModule } from '@angular/forms';
-import { DateCountPipe } from './date-count.pipe';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { DateCountPipe } from './date-count.pipe';
     UserComponent,
     RepositoriesComponent,
     SearchFormComponent,
-    DateCountPipe,
+  
   
   ],
   imports: [
