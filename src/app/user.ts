@@ -10,7 +10,7 @@ export class User {
         public followers: number,
         public public_repos : number,
         public forks_count : number,
-        public completeDate: string
+        
     
     )
         {}
